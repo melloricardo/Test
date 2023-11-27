@@ -1,6 +1,7 @@
 "'Rogerio Screen' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
 
     RectQuickActionBar4 As rectangle:
+        Fill: =RGBA(72, 163, 62, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -81,10 +82,11 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                IsSearchable: =false
                 Items: =Choices([@'Não Conformidade'].Projeto)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Não Conformidade'.Projeto,DataCardValue9.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
@@ -441,10 +443,11 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                IsSearchable: =false
                 Items: =Choices([@'Não Conformidade'].Contratada)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Não Conformidade'.Contratada,DataCardValue14.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
