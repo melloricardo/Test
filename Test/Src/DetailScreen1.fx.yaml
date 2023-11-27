@@ -381,12 +381,13 @@
                 HoverBorderColor: =ColorFade(Self.BorderColor; 15%)
                 HoverColor: =RGBA(0; 0; 0; 1)
                 HoverFill: =RGBA(186; 202; 226; 1)
+                IsSearchable: =false
                 Items: =Choices([@'Não Conformidade'].Contratada)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit; 5; 0)
                 PressedColor: =RGBA(255; 255; 255; 1)
                 PressedFill: =RGBA(0; 18; 107; 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Não Conformidade'.Contratada;DataCardValue5.SearchText)
+                SearchItems: =[]
                 SelectionColor: =RGBA(255; 255; 255; 1)
                 SelectionFill: =RGBA(56; 96; 178; 1)
                 SelectMultiple: =false
