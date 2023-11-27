@@ -92,7 +92,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 3,
+    "BindingErrorCount": 1317,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -111,7 +111,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Não Conformidade",
     "OriginatingVersion": "1.294",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 967,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -128,6 +128,7 @@
   "ScreenOrder": [
     "BrowseScreen1",
     "DetailScreen1",
-    "EditScreen1"
+    "EditScreen1",
+    "Rogerio Screen"
   ]
 }
