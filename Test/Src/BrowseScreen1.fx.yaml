@@ -170,7 +170,7 @@
         TemplateFill: =RGBA(0; 0; 0; 0)
         TemplatePadding: =0
         TemplateSize: =Min(168; Self.Height - 60)
-        Y: =158
+        Y: =156
         ZIndex: =9
 
         Title1 As label:
