@@ -50,7 +50,7 @@
         TabIndex: =0
         Tooltip: ="Atualizar lista"
         Width: =88
-        X: =Parent.Width - IconNewItem1.Width - IconSortUpDown1.Width - Self.Width
+        X: =800 - IconNewItem1.Width - IconSortUpDown1.Width - Self.Width
         ZIndex: =3
 
     IconSortUpDown1 As icon.ArrowsUpDown:
@@ -102,7 +102,7 @@
         TabIndex: =0
         Tooltip: ="Criar novo item"
         Width: =88
-        X: =Parent.Width - Self.Width
+        X: =10
         ZIndex: =5
 
     TextSearchBox1 As text:
@@ -171,7 +171,6 @@
         TemplateFill: =RGBA(0; 0; 0; 0)
         TemplatePadding: =0
         TemplateSize: =Min(168; Self.Height - 60)
-        Width: =200
         Y: =158
         ZIndex: =9
 
