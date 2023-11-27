@@ -54,8 +54,8 @@
         Size: =21
         Tooltip: ="Select a calendar"
         Width: =470
-        X: =57
-        Y: =1014
+        X: =54
+        Y: =657
         ZIndex: =4
 
     iconCalendar1 As icon.CalendarBlank:
