@@ -22,7 +22,7 @@
       "copyandmerge": true,
       "dataflowanalysisenabled": false,
       "datatablev2control": true,
-      "dataverseactionsenabled": false,
+      "dataverseactionsenabled": true,
       "delaycontrolrendering": false,
       "delayloadscreens": true,
       "disablecdsfileandlargeimage": false,
@@ -52,7 +52,7 @@
       "exportimportcomponents2": true,
       "externalmessage": false,
       "fluentv9controls": false,
-      "fluentv9controlspreview": false,
+      "fluentv9controlspreview": true,
       "formuladataprefetch": true,
       "formularepair": false,
       "generatedebugpublishedapp": false,
@@ -63,7 +63,7 @@
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
       "mobilenativerendering": false,
-      "namedformulas": false,
+      "namedformulas": true,
       "nativecdsexperimental": true,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
@@ -123,7 +123,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "pt-BR"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "BrowseScreen1",
