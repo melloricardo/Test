@@ -102,7 +102,6 @@
         TabIndex: =0
         Tooltip: ="Criar novo item"
         Width: =88
-        X: =10
         ZIndex: =5
 
     TextSearchBox1 As text:
