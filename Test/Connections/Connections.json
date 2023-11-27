@@ -1,0 +1,50 @@
+{
+  "3910eacc-746f-448d-b536-7ed46c4f6faf": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://prosperi.sharepoint.com/sites/PWA_neoenergia/": {
+        "dataSources": {
+          "Não Conformidade": {
+            "tableName": "b4a718f4-6c2a-4837-b684-0676887d5e81"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Não Conformidade"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3910eacc-746f-448d-b536-7ed46c4f6faf"
+  },
+  "3bbfa932-7bf1-4f53-8958-27493ba7ce20": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Project Online",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1650/1.0.1650.3374/projectonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_projectonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "ProjectOnline"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3bbfa932-7bf1-4f53-8958-27493ba7ce20"
+  }
+}

@@ -1,0 +1,12 @@
+App As appinfo:
+    BackEnabled: =true
+    SizeBreakpoints: =[1200; 1800; 2400]
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

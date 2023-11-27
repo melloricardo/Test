@@ -1,0 +1,436 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/projectonline" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="ProjectOnline" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Project Online">O Project Online é uma solução online flexível para PPM (gerenciamento de portfólio de projetos) e trabalho cotidiano da Microsoft. Entregue por meio do Office 365, o Project Online permite que as organizações se familiarizem rapidamente com recursos poderosos de gerenciamento de projeto para planejar, priorizar e gerenciar projetos e investimentos de portfólio de projetos – de praticamente qualquer lugar e em praticamente qualquer dispositivo.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://brazil-001.azure-apim.net/apim/projectonline" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <array typeRef="TriggerProject" name="TriggerProjectsWrapper_value_def" />
+      <object name="TriggerProjectsWrapper">
+        <property name="value" typeRef="TriggerProjectsWrapper_value_def" />
+      </object>
+      <dateTimeString name="TriggerProject_ProjectStartDate_def" />
+      <dateTimeString name="TriggerProject_ProjectFinishDate_def" />
+      <dateTimeString name="TriggerProject_ProjectCreatedDate_def" />
+      <string name="TriggerProject_ProjectId_def" />
+      <dateTimeString name="TriggerProject_ProjectModifiedDate_def" />
+      <integer name="TriggerProject_ProjectType_def" />
+      <string name="TriggerProject_ProjectName_def" />
+      <dateTimeString name="TriggerProject_ProjectLastPublishedDate_def" />
+      <string name="TriggerProject_ProjectOwnerName_def" />
+      <integer name="TriggerProject_ProjectPercentCompleted_def" />
+      <integer name="TriggerProject_ProjectPercentWorkCompleted_def" />
+      <string name="TriggerProject_ProjectOvertimeCost_def" />
+      <string name="TriggerProject_ProjectOvertimeWork_def" />
+      <object name="TriggerProject">
+        <property name="ProjectStartDate" typeRef="TriggerProject_ProjectStartDate_def" />
+        <property name="ProjectFinishDate" typeRef="TriggerProject_ProjectFinishDate_def" />
+        <property name="ProjectCreatedDate" typeRef="TriggerProject_ProjectCreatedDate_def" />
+        <property name="ProjectId" type="string" />
+        <property name="ProjectModifiedDate" typeRef="TriggerProject_ProjectModifiedDate_def" />
+        <property name="ProjectType" type="integer" />
+        <property name="ProjectName" type="string" />
+        <property name="ProjectLastPublishedDate" typeRef="TriggerProject_ProjectLastPublishedDate_def" />
+        <property name="ProjectOwnerName" type="string" />
+        <property name="ProjectPercentCompleted" type="integer" />
+        <property name="ProjectPercentWorkCompleted" type="integer" />
+        <property name="ProjectOvertimeCost" type="string" />
+        <property name="ProjectOvertimeWork" type="string" />
+      </object>
+      <array typeRef="TriggerResource" name="TriggerResourcesWrapper_value_def" />
+      <object name="TriggerResourcesWrapper">
+        <property name="value" typeRef="TriggerResourcesWrapper_value_def" />
+      </object>
+      <string name="TriggerResource_ResourceId_def" />
+      <string name="TriggerResource_ResourceBaseCalendar_def" />
+      <integer name="TriggerResource_ResourceBookingType_def" />
+      <boolean name="TriggerResource_ResourceCanLevel_def" />
+      <string name="TriggerResource_ResourceCostPerUse_def" />
+      <dateTimeString name="TriggerResource_ResourceCreatedDate_def" />
+      <dateTimeString name="TriggerResource_ResourceEarliestAvailableFrom_def" />
+      <string name="TriggerResource_ResourceEmailAddress_def" />
+      <string name="TriggerResource_ResourceInitials_def" />
+      <boolean name="TriggerResource_ResourceIsActive_def" />
+      <boolean name="TriggerResource_ResourceIsGeneric_def" />
+      <dateTimeString name="TriggerResource_ResourceLatestAvailableTo_def" />
+      <dateTimeString name="TriggerResource_ResourceModifiedDate_def" />
+      <string name="TriggerResource_ResourceName_def" />
+      <string name="TriggerResource_ResourceStatsuName_def" />
+      <integer name="TriggerResource_ResourceType_def" />
+      <string name="TriggerResource_TypeDescription_def" />
+      <string name="TriggerResource_TypeName_def" />
+      <object name="TriggerResource">
+        <property name="ResourceId" type="string" />
+        <property name="ResourceBaseCalendar" type="string" />
+        <property name="ResourceBookingType" type="integer" />
+        <property name="ResourceCanLevel" type="boolean" />
+        <property name="ResourceCostPerUse" type="string" />
+        <property name="ResourceCreatedDate" typeRef="TriggerResource_ResourceCreatedDate_def" />
+        <property name="ResourceEarliestAvailableFrom" typeRef="TriggerResource_ResourceEarliestAvailableFrom_def" />
+        <property name="ResourceEmailAddress" type="string" />
+        <property name="ResourceInitials" type="string" />
+        <property name="ResourceIsActive" type="boolean" />
+        <property name="ResourceIsGeneric" type="boolean" />
+        <property name="ResourceLatestAvailableTo" typeRef="TriggerResource_ResourceLatestAvailableTo_def" />
+        <property name="ResourceModifiedDate" typeRef="TriggerResource_ResourceModifiedDate_def" />
+        <property name="ResourceName" type="string" />
+        <property name="ResourceStatsuName" type="string" />
+        <property name="ResourceType" type="integer" />
+        <property name="TypeDescription" type="string" />
+        <property name="TypeName" type="string" />
+      </object>
+      <array typeRef="TriggerTask" name="TriggerTasksWrapper_value_def" />
+      <object name="TriggerTasksWrapper">
+        <property name="value" typeRef="TriggerTasksWrapper_value_def" />
+      </object>
+      <string name="TriggerTask_ProjectId_def" />
+      <string name="TriggerTask_TaskId_def" />
+      <string name="TriggerTask_ProjectName_def" />
+      <string name="TriggerTask_TaskName_def" />
+      <dateTimeString name="TriggerTask_TaskCreatedDate_def" />
+      <dateTimeString name="TriggerTask_TaskModifieddate_def" />
+      <dateTimeString name="TriggerTask_TaskStartDate_def" />
+      <dateTimeString name="TriggerTask_TaskFinishDate_def" />
+      <integer name="TriggerTask_TaskPriority_def" />
+      <boolean name="TriggerTask_TaskIsActive_def" />
+      <object name="TriggerTask">
+        <property name="ProjectId" type="string" />
+        <property name="TaskId" type="string" />
+        <property name="ProjectName" type="string" />
+        <property name="TaskName" type="string" />
+        <property name="TaskCreatedDate" typeRef="TriggerTask_TaskCreatedDate_def" />
+        <property name="TaskModifieddate" typeRef="TriggerTask_TaskModifieddate_def" />
+        <property name="TaskStartDate" typeRef="TriggerTask_TaskStartDate_def" />
+        <property name="TaskFinishDate" typeRef="TriggerTask_TaskFinishDate_def" />
+        <property name="TaskPriority" type="integer" />
+        <property name="TaskIsActive" type="boolean" />
+      </object>
+      <string name="NewProject_Name_def" />
+      <string name="NewProject_Description_def" />
+      <dateTimeString name="NewProject_Start_def" />
+      <object name="NewProject">
+        <property name="Name" type="string" />
+        <property name="Description" type="string" />
+        <property name="Start" typeRef="NewProject_Start_def" />
+      </object>
+      <dateTimeString name="Project_ApprovedStart_def" />
+      <dateTimeString name="Project_ApprovedEnd_def" />
+      <dateTimeString name="Project_CheckedOutDate_def" />
+      <string name="Project_CheckOutDescription_def" />
+      <string name="Project_CheckOutId_def" />
+      <dateTimeString name="Project_CreatedDate_def" />
+      <string name="Project_Id_def" />
+      <boolean name="Project_IsCheckedOut_def" />
+      <dateTimeString name="Project_ProjectLastPublishedDate_def" />
+      <dateTimeString name="Project_LastPublishedDate_def" />
+      <dateTimeString name="Project_LastSavedDate_def" />
+      <integer name="Project_OptimizerDecision_def" />
+      <integer name="Project_PlannerDecision_def" />
+      <integer name="Project_ProjectType_def" />
+      <string name="Project_Name_def" />
+      <string name="Project_ProjectIdentifier_def" />
+      <string name="Project_WinprojVersion_def" />
+      <object name="Project">
+        <property name="ApprovedStart" typeRef="Project_ApprovedStart_def" />
+        <property name="ApprovedEnd" typeRef="Project_ApprovedEnd_def" />
+        <property name="CheckedOutDate" typeRef="Project_CheckedOutDate_def" />
+        <property name="CheckOutDescription" type="string" />
+        <property name="CheckOutId" type="string" />
+        <property name="CreatedDate" typeRef="Project_CreatedDate_def" />
+        <property name="Id" type="string" />
+        <property name="IsCheckedOut" type="boolean" />
+        <property name="ProjectLastPublishedDate" typeRef="Project_ProjectLastPublishedDate_def" />
+        <property name="LastPublishedDate" typeRef="Project_LastPublishedDate_def" />
+        <property name="LastSavedDate" typeRef="Project_LastSavedDate_def" />
+        <property name="OptimizerDecision" type="integer" />
+        <property name="PlannerDecision" type="integer" />
+        <property name="ProjectType" type="integer" />
+        <property name="Name" type="string" />
+        <property name="ProjectIdentifier" type="string" />
+        <property name="WinprojVersion" type="string" />
+      </object>
+      <array typeRef="Project" name="ProjectsWrapper_value_def" />
+      <object name="ProjectsWrapper">
+        <property name="value" typeRef="ProjectsWrapper_value_def" />
+      </object>
+      <object name="NewTask">
+        <property name="parameters" typeRef="TaskParameters" />
+      </object>
+      <string name="TaskParameters_Name_def" />
+      <string name="TaskParameters_Notes_def" />
+      <dateTimeString name="TaskParameters_Start_def" />
+      <string name="TaskParameters_Duration_def" />
+      <object name="TaskParameters">
+        <property name="Name" type="string" />
+        <property name="Notes" type="string" />
+        <property name="Start" typeRef="TaskParameters_Start_def" />
+        <property name="Duration" type="string" />
+      </object>
+      <string name="NewResource_Name_def" />
+      <boolean name="NewResource_IsBudget_def" />
+      <boolean name="NewResource_IsGeneric_def" />
+      <boolean name="NewResource_IsInactive_def" />
+      <object name="NewResource">
+        <property name="Name" type="string" />
+        <property name="IsBudget" type="boolean" />
+        <property name="IsGeneric" type="boolean" />
+        <property name="IsInactive" type="boolean" />
+      </object>
+      <boolean name="EnterpriseResource_CanLevel_def" />
+      <string name="EnterpriseResource_Code_def" />
+      <integer name="EnterpriseResource_CostAccrual_def" />
+      <string name="EnterpriseResource_CostCenter_def" />
+      <dateTimeString name="EnterpriseResource_Created_def" />
+      <integer name="EnterpriseResource_DefaultBookingType_def" />
+      <string name="EnterpriseResource_Email_def" />
+      <string name="EnterpriseResource_ExternalId_def" />
+      <string name="EnterpriseResource_Group_def" />
+      <dateTimeString name="EnterpriseResource_HireDate_def" />
+      <string name="EnterpriseResource_Id_def" />
+      <string name="EnterpriseResource_Initials_def" />
+      <boolean name="EnterpriseResource_IsActive_def" />
+      <boolean name="EnterpriseResource_IsBudget_def" />
+      <boolean name="EnterpriseResource_IsCheckedOut_def" />
+      <boolean name="EnterpriseResource_IsGeneric_def" />
+      <boolean name="EnterpriseResource_IsTeam_def" />
+      <string name="EnterpriseResource_MaterialLabel_def" />
+      <dateTimeString name="EnterpriseResource_Modified_def" />
+      <string name="EnterpriseResource_Name_def" />
+      <string name="EnterpriseResource_Phonetics_def" />
+      <integer name="EnterpriseResource_ResourceType_def" />
+      <dateTimeString name="EnterpriseResource_TerminationDate_def" />
+      <object name="EnterpriseResource">
+        <property name="CanLevel" type="boolean" />
+        <property name="Code" type="string" />
+        <property name="CostAccrual" type="integer" />
+        <property name="CostCenter" type="string" />
+        <property name="Created" typeRef="EnterpriseResource_Created_def" />
+        <property name="DefaultBookingType" type="integer" />
+        <property name="Email" type="string" />
+        <property name="ExternalId" type="string" />
+        <property name="Group" type="string" />
+        <property name="HireDate" typeRef="EnterpriseResource_HireDate_def" />
+        <property name="Id" type="string" />
+        <property name="Initials" type="string" />
+        <property name="IsActive" type="boolean" />
+        <property name="IsBudget" type="boolean" />
+        <property name="IsCheckedOut" type="boolean" />
+        <property name="IsGeneric" type="boolean" />
+        <property name="IsTeam" type="boolean" />
+        <property name="MaterialLabel" type="string" />
+        <property name="Modified" typeRef="EnterpriseResource_Modified_def" />
+        <property name="Name" type="string" />
+        <property name="Phonetics" type="string" />
+        <property name="ResourceType" type="integer" />
+        <property name="TerminationDate" typeRef="EnterpriseResource_TerminationDate_def" />
+      </object>
+      <array typeRef="Task" name="TasksWrapper_value_def" />
+      <object name="TasksWrapper">
+        <property name="value" typeRef="TasksWrapper_value_def" />
+      </object>
+      <dateTimeString name="Task_Created_def" />
+      <dateTimeString name="Task_Modified_def" />
+      <dateTimeString name="Task_Start_def" />
+      <dateTimeString name="Task_Finish_def" />
+      <dateTimeString name="Task_ScheduledStart_def" />
+      <dateTimeString name="Task_ScheduledFinish_def" />
+      <string name="Task_Name_def" />
+      <string name="Task_Id_def" />
+      <integer name="Task_Priority_def" />
+      <integer name="Task_PercentComplete_def" />
+      <string name="Task_Notes_def" />
+      <string name="Task_Contact_def" />
+      <boolean name="Task_IsMilestone_def" />
+      <object name="Task">
+        <property name="Created" typeRef="Task_Created_def" />
+        <property name="Modified" typeRef="Task_Modified_def" />
+        <property name="Start" typeRef="Task_Start_def" />
+        <property name="Finish" typeRef="Task_Finish_def" />
+        <property name="ScheduledStart" typeRef="Task_ScheduledStart_def" />
+        <property name="ScheduledFinish" typeRef="Task_ScheduledFinish_def" />
+        <property name="Name" type="string" />
+        <property name="Id" type="string" />
+        <property name="Priority" type="integer" />
+        <property name="PercentComplete" type="integer" />
+        <property name="Notes" type="string" />
+        <property name="Contact" type="string" />
+        <property name="IsMilestone" type="boolean" />
+      </object>
+      <object name="Object" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://brazil-001.azure-apim.net/apim/projectonline">
+    <resource path="/{connectionId}/_api/ProjectServer/Projects">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProjects" siena:isDeprecated="false">
+        <doc title="Listar projetos&#xA;Lista os projetos no seu site do Project Online." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ProjectsWrapper" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateProject" siena:isDeprecated="false">
+        <doc title="Cria novo projeto&#xA;Cria um novo projeto no seu site do Project Online." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Name" path="/Name" type="xs:string" required="true" />
+            <param style="plain" name="Description" path="/Description" type="xs:string" />
+            <param style="plain" name="Start" path="/Start" type="service:NewProject_Start_def" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Project" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto a se buscar" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="ListProject" siena:isDeprecated="false">
+        <doc title="Listar projeto&#xA;Lista um projeto pela ID no site do Project Online." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+          <param style="query" name="$select" type="xs:string">
+            <doc title="Consulta selecionada pelo OData para as colunas a serem retornadas. Exemplo: Id, Name" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Project" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')/Draft/Tasks/Add">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto para o qual adicionar a tarefa." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="CreateTask" siena:isDeprecated="false">
+        <doc title="Cria nova tarefa&#xA;Cria uma nova tarefa no seu projeto." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="parameters" path="/parameters" type="service:TaskParameters" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Task" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/EnterpriseResources">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateResource" siena:isDeprecated="false">
+        <doc title="Criar novo recurso&#xA;Cria um Recurso de Empresa no seu site do Project Online." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Name" path="/Name" type="xs:string" required="true" />
+            <param style="plain" name="IsBudget" path="/IsBudget" type="xs:boolean" />
+            <param style="plain" name="IsGeneric" path="/IsGeneric" type="xs:boolean" />
+            <param style="plain" name="IsInactive" path="/IsInactive" type="xs:boolean" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:EnterpriseResource" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')/Tasks">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto para buscar tarefas." />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="ListTasks" siena:isDeprecated="false">
+        <doc title="Lista tarefas&#xA;Lista as tarefas publicadas em um projeto." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+          <param style="query" name="$filter" type="xs:string">
+            <doc title="Uma consulta de filtro do OData para restringir as entradas foi retornada (ex.: Id eq 'task-guid')." />
+          </param>
+          <param style="query" name="$select" type="xs:string">
+            <doc title="Consulta selecionada pelo OData para as colunas a serem retornadas. Exemplo: Id, Name" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:TasksWrapper" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')/ProjectSummaryTask">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto a se buscar" />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetProjectSummaryTask" siena:isDeprecated="false">
+        <doc title="Obter tarefa de resumo do projeto&#xA;Obtém a tarefa de resumo do projeto de um determinado projeto." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Task" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')/checkOut">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto para finalizar compra." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="CheckoutProject" siena:isDeprecated="false">
+        <doc title="Verificar o projeto&#xA;Verifica um projeto existente no seu site." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Object" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/_api/ProjectServer/Projects('{project_id}')/Draft/Publish(true)">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="project_id" type="xs:string" required="true">
+        <doc title="A ID exclusiva do projeto para fazer check-in." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="PublishProject" siena:isDeprecated="false">
+        <doc title="Check-in e publicação do projeto&#xA;Verifique e publique um projeto existente no seu site." />
+        <request>
+          <param style="query" name="siteUrl" type="xs:anyURI" siena:dtype="hyperlink" required="true">
+            <doc title="URL do site raiz do site do seu projeto (Exemplo: https://sampletenant.sharepoint.com/teams/sampleteam)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Object" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_projectonline" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
