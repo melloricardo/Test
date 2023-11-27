@@ -579,7 +579,7 @@
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue16.Height / 2) - (Self.Height / 2)
+                Y: =42
                 ZIndex: =1
 
             DataCardValue16 As datepicker:
@@ -596,7 +596,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey16.X + DataCardKey16.Width
-                Y: =10
+                Y: =20
                 ZIndex: =2
 
             ErrorMessage10 As label:
