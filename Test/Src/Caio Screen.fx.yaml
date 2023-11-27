@@ -1,7 +1,7 @@
 "'Caio Screen' As screen.'phoneLayout_Calendar_ver3.0'":
 
     RectQuickActionBar5 As rectangle:
-        Fill: =RGBA(83, 144, 164, 1)
+        Fill: =RGBA(160, 64, 8, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
