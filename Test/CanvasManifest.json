@@ -92,7 +92,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 1317,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -111,7 +111,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Não Conformidade",
     "OriginatingVersion": "1.294",
-    "ParserErrorCount": 967,
+    "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -126,9 +126,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "BrowseScreen1",
-    "DetailScreen1",
-    "EditScreen1",
     "Rogerio Screen",
     "Caio Screen"
   ]
