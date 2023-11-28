@@ -37,7 +37,7 @@
     LblAppName4 As label:
         Height: =88
         Size: =27
-        Text: ="xxxxxx"
+        Text: ="ffffff "
         Width: =Parent.Width - IconCancel2.Width - IconAccept2.Width
         Wrap: =false
         X: =IconCancel2.X + IconCancel2.Width

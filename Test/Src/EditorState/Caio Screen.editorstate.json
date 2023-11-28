@@ -342,7 +342,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%CalendarEventsGallery.ID%",
       "Name": "CalendarEventsGallery1",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -913,7 +913,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateCalendardropdownCalendarSelect.ID%",
       "Name": "dropdownCalendarSelection1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1315,7 +1315,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconCalendar.ID%",
       "Name": "iconCalendar1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1490,7 +1490,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateTabletIconEmptyState.ID%",
       "Name": "iconEmptyState1",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1840,7 +1840,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconNextMonth.ID%",
       "Name": "iconNextMonth1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2054,7 +2054,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconPrevMonth.ID%",
       "Name": "iconPrevMonth1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2240,14 +2240,7 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Fill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Fill",
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -2274,7 +2267,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneLblAppName.ID%",
       "Name": "LblAppName5",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2484,7 +2477,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateLblEventsHeader.ID%",
       "Name": "LblCalendarEventsHeader1",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2713,7 +2706,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneLblEmptyState.ID%",
       "Name": "LblEmptyState1",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2987,7 +2980,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateLblMonthSelected.ID%",
       "Name": "LblMonthSelected1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3261,7 +3254,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneLblNoEvents.ID%",
       "Name": "LblNoEvents1",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3524,7 +3517,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneLblReset.ID%",
       "Name": "LblResetToday1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3731,7 +3724,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MonthDayGallery.ID%",
       "Name": "MonthDayGallery1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4029,7 +4022,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateRectEventsHeader.ID%",
       "Name": "RectCalendarEventsHeader1",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4140,7 +4133,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneRectQuickActionBar.ID%",
       "Name": "RectQuickActionBar5",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5640,7 +5633,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%WeekdayGallery.ID%",
       "Name": "WeekdayGallery1",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
