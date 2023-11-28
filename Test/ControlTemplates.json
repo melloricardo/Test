@@ -206,7 +206,7 @@
     "OverridableProperties": {},
     "Version": "2.3.2"
   },
-  "Text": {
+  "Texto": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextCanvas",
@@ -218,7 +218,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Text",
+    "TemplateDisplayName": "Texto",
     "Version": "0.0.16"
   },
   "typedDataCard": {

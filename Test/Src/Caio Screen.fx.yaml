@@ -369,7 +369,7 @@
         Y: =CalendarEventsGallery1.Y + CalendarEventsGallery1.Height/2 - Self.Height/2
         ZIndex: =16
 
-    TextCanvas1 As Text:
+    TextCanvas1 As Texto:
         DisplayMode: =DisplayMode.Edit
         Height: =52
         Size: =22
